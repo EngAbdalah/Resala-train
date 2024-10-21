@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_resala_trainer_form" model="ir.ui.view">
+        <field name="name">resala_trainer.form</field>
+        <field name="model">resala_trainer</field>
+        <field name="arch" type="xml">
+            <form string="Trainer">
+                <header>
+                    <button name="action_open_exams" type="object" string="Exams" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="sequence"/>
+                        <field name="gender"/>
+                        <field name="courses"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_resala_trainer_tree" model="ir.ui.view">
+        <field name="name">resala_trainer.tree</field>
+        <field name="model">resala_trainer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="sequence"/>
+                <field name="gender"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+    <record id="resala_trainer_action" model="ir.actions.act_window">
+        <field name="name" >resala_trainer action</field>
+        <field name="res_model">resala_trainer</field>
+    </record>
+
+    <menuitem
+            id="resala_trainer_menu_item"
+            name="resala_trainer"
+            parent="resala_2nd_menu"
+            action="resala_trainer_action"
+    />
+</odoo>

@@ -1,0 +1,12 @@
+<odoo>
+    <menuitem
+        id = "resala_root_menu"
+        name="Resala"
+
+    />
+    <menuitem
+        id = "resala_2nd_menu"
+        name="Resala"
+        parent="resala_root_menu"
+    />
+</odoo>

@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_resala_courses_form" model="ir.ui.view">
+        <field name="name">resala_courses.form</field>
+        <field name="model">resala_courses</field>
+        <field name="arch" type="xml">
+            <form string="Course">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="hours"/>
+                        <field name="trainer_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_resala_courses_tree" model="ir.ui.view">
+        <field name="name">resala_courses.tree</field>
+        <field name="model">resala_courses</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="hours"/>
+                <field name="trainer_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="resala_courses_action" model="ir.actions.act_window">
+        <field name="name" >resala_courses action</field>
+        <field name="res_model">resala_courses</field>
+    </record>
+
+    <menuitem
+            id="resala_courses_menu_item"
+            name="resala_courses"
+            parent="resala_2nd_menu"
+            action="resala_courses_action"
+    />
+
+</odoo>

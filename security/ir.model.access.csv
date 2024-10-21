@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_resala_trainer,access_resala_trainer,model_resala_trainer,,1,1,1,1
+access_resala_courses,access_resala_courses,model_resala_courses,,1,1,1,1
+access_resala_exam,access_resala_exam,model_resala_exam,,1,1,1,1
